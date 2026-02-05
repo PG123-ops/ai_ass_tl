@@ -6,26 +6,31 @@ It is a Python-based tool that automates tasks using multiple tools and APIs. It
 Follow these steps to run AI Ops Assistant on your local machine (localhost):
 
 1. Clone the repository
-  git clone https://github.com/PG123-ops/ai_ass_tl.git
-  cd ai_ass_tl
+
+        git clone https://github.com/PG123-ops/ai_ass_tl.git
+        cd ai_ass_tl
 
 2. Create and activate a Python virtual environment
-  python -m venv venv
-  venv\Scripts\activate              # Windows
-  source venv/bin/activate           # macOS/Linux
 
-3. Install dependencies
-  pip install -r requirements.txt
+        python -m venv venv
+        venv\Scripts\activate              # Windows
+        source venv/bin/activate           # macOS/Linux
 
-4. Set up environment variables
-  GEMINI_API_KEY=your_gemini_api_key_here
-  OPENWEATHER_API_KEY=your_openweather_api_key_here
-  NEWS_API_KEY=your_news_api_key_here
+4. Install dependencies
 
-5. Run the assistant
-  python main.py
+        pip install -r requirements.txt
 
-                           The system will execute tasks and print results to the console.
+5. Set up environment variables
+
+        GEMINI_API_KEY=your_gemini_api_key_here
+        OPENWEATHER_API_KEY=your_openweather_api_key_here
+        NEWS_API_KEY=your_news_api_key_here
+
+6. Run the assistant
+
+          python main.py
+
+The system will execute tasks and print results to the console.
 
 
 
