@@ -1,6 +1,5 @@
 AI Ops Assistant
-It is a Python-based tool that automates tasks using multiple tools and APIs. It converts user requests into structured steps using a Planner LLM and executes them via specialized agents.
-
+In this project, I am building an AI Ops Assistant that uses a Large Language Model (LLM) to understand user requests, break them into structured execution steps, and automatically perform tasks using multiple APIs and tools. The system follows an agent-based architecture where a Planner agent converts natural language queries into machine-readable steps, and an Executor agent carries out those steps using services like weather data APIs and city information sources. The goal of the project is to explore LLM-driven automation, tool orchestration, and reliable task execution in a modular, extensible AI system.
 
 ### Setup Instructions (Run Locally)
 Follow these steps to run AI Ops Assistant on your local machine (localhost):
@@ -41,15 +40,22 @@ AI Ops Assistant has a modular agent-based architecture:
 Agents:
 
 Planner: Converts natural language tasks into structured steps (tool, action, params) using Gemini LLM.
+
 Executor: Runs the planned steps via the appropriate tool/API.
+
 Verifier: Checks and corrects outputs returned by agents.
+
 
 Tools: Each tool handles specific actions:
 
 Weather — fetches real-time weather data from OpenWeather API.
+
 Wiki / Place Info — retrieves summaries of cities or locations (Wikipedia or local file).
+
 GitHub — queries repositories (planned for future integration).
+
 News — fetches latest news (planned for future integration).
+
 
 Flow:
 User Task → Planner Agent → Steps → Executor → Results → Verifier → Final Output
@@ -59,17 +65,24 @@ User Task → Planner Agent → Steps → Executor → Results → Verifier → 
 Integrated APIs & Tools
 
 Gemini LLM API: For planning tasks into structured steps.
+
 OpenWeather API: For real-time weather queries.
+
 Wikipedia / Local City Info File: For city/place data retrieval.
+
 GitHub API (future): Repository information.
+
 News API (future): Latest news on topics of interest.
 
 
 Example Prompts                      # Note:- you have to change the prompt in main.py under the name task
 
 Give me interesting facts about the city 'Delhi' from the city info file.
+
 What is the current weather in New York?
+
 List the top 5 repositories for 'pandas' on GitHub.
+
 Give me the latest news about artificial intelligence.
 
 
