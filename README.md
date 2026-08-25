@@ -40,20 +40,15 @@ AI Ops Assistant has a modular agent-based architecture:
 Agents:
 
 Planner: Converts natural language tasks into structured steps (tool, action, params) using Gemini LLM.
-
 Executor: Runs the planned steps via the appropriate tool/API.
-
 Verifier: Checks and corrects outputs returned by agents.
 
 
 Tools: Each tool handles specific actions:
 
 Weather — fetches real-time weather data from OpenWeather API.
-
 Wiki / Place Info — retrieves summaries of cities or locations (Wikipedia or local file).
-
 GitHub — queries repositories (planned for future integration).
-
 News — fetches latest news (planned for future integration).
 
 
@@ -65,13 +60,9 @@ User Task → Planner Agent → Steps → Executor → Results → Verifier → 
 Integrated APIs & Tools
 
 Gemini LLM API: For planning tasks into structured steps.
-
 OpenWeather API: For real-time weather queries.
-
 Wikipedia / Local City Info File: For city/place data retrieval.
-
 GitHub API (future): Repository information.
-
 News API (future): Latest news on topics of interest.
 
 
