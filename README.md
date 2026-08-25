@@ -1,4 +1,4 @@
-###AI Ops Assistant
+### AI Ops Assistant
 
 In this project, I am building an AI Ops Assistant that uses a Large Language Model (LLM) to understand user requests, break them into structured execution steps, and automatically perform tasks using multiple APIs and tools. The system follows an agent-based architecture where a Planner agent converts natural language queries into machine-readable steps, and an Executor agent carries out those steps using services like weather data APIs and city information sources. The goal of the project is to explore LLM-driven automation, tool orchestration, and reliable task execution in a modular, extensible AI system.
 
@@ -58,12 +58,16 @@ User Task → Planner Agent → Steps → Executor → Results → Verifier → 
 
 
 
-Integrated APIs & Tools
+## Integrated APIs & Tools
 
 Gemini LLM API: For planning tasks into structured steps.
+
 OpenWeather API: For real-time weather queries.
+
 Wikipedia / Local City Info File: For city/place data retrieval.
+
 GitHub API (future): Repository information.
+
 News API (future): Latest news on topics of interest.
 
 
